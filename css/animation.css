@@ -1,0 +1,102 @@
+@-webkit-keyframes gear-moves-anticlockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@-moz-keyframes gear-moves-anticlockwise {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes gear-moves-clockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes gear-moves-clockwise {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+.gear-animation>.big img, .gear-animation>.big{
+  height: 200px;
+  width: 200px;
+}
+.gear-animation>.small img, .gear-animation>.small{
+  height: 103px;
+  width:103px;
+}
+.gear-animation>.gear {
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: normal;
+  -moz-animation-delay: 0;
+  -moz-animation-play-state: running;
+  -moz-animation-fill-mode: forwards;
+
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -webkit-animation-delay: 0;
+  -webkit-animation-play-state: running;
+  -webkit-animation-fill-mode: forwards;
+
+}
+
+.gear-animation>.big {
+  position: absolute;
+  left: 45px;
+  top:105px;
+  -moz-animation-duration: 7.5s;
+  -webkit-animation-duration: 7.5s;
+  -moz-animation-name: gear-moves-clockwise;
+  -webkit-animation-name: gear-moves-clockwise;
+
+
+}
+
+.gear-animation>.small{
+  position: absolute;
+  -moz-animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+
+}
+.gear-animation>.left{
+  left: 0;
+  top: 280px;
+  -moz-animation-name: gear-moves-anticlockwise;
+  -webkit-animation-name: gear-moves-anticlockwise;
+}
+.gear-animation>.right{
+  left: 190px;
+  top: 280px;
+  -moz-animation-name: gear-moves-anticlockwise;
+  -webkit-animation-name: gear-moves-anticlockwise;
+}
+.gear-animation>.top{
+  left:90px;
+  top:0;
+  -moz-animation-name: gear-moves-anticlockwise;
+  -webkit-animation-name: gear-moves-anticlockwise;
+}
+.gear-animation{
+  margin-top:100px;
+  position: relative;
+  height: 380px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
