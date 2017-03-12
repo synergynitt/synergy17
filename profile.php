@@ -9,7 +9,7 @@ if (isset($_SESSION['userid'])){
 <head>
   <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
 
-  <title> Synergy 2017 | Workshops</title>
+  <title> Synergy 2017 | Registrations</title>
   <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
@@ -34,6 +34,10 @@ if (isset($_SESSION['userid'])){
     <div class="ui item basic segment">
       <h5 class="ui header login-data ">
       </h5>
+    </div>
+    <a class="ui item registrations" href="profile.php">
+      <div class="left aligned ui basic segment">
+      My Registrations
     </div>
     <a class="item" href="workshops.php">
       <div class="left aligned ui basic segment">
@@ -89,7 +93,7 @@ if (isset($_SESSION['userid'])){
                 <img class="ui mini middle aligned image" src="images/synergy_logo.jpg" >
               </a>
               <i class="right chevron icon divider"></i>
-              <p class="section">Workshops</p>
+              <p class="section">Profile</p>
             </div>
           </div>
         </div>
