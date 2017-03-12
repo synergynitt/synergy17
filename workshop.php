@@ -47,6 +47,10 @@ if (array_key_exists($workshop, $workshops)){
         <h5 class="ui header login-data ">
         </h5>
       </div>
+      <a class="ui item registrations" href="profile.php">
+        <div class="left aligned ui basic segment">
+        My Registrations
+      </div>
       <a class="item" href="workshops.php">
         <div class="left aligned ui basic segment">
 

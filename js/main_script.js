@@ -13,6 +13,7 @@ function logout(){
     success: function(){
       $(".logout").hide();
       $(".login-data").hide();
+      $(".registrations").hide();
       $(".synergy-login").show();
       console.log("Logged out");
       showloggedInUser();
@@ -25,6 +26,8 @@ $(".logout")
   logout();
 });
 $(".login-data").hide();
+$(".registrations").hide();
+
 
 function showloggedInUser(){
   console.log("Showing logged in user");
@@ -44,6 +47,7 @@ function showloggedInUser(){
         $(".synergy-login").hide();
         $(".logout").show();
         $(".login-data").show();
+        $(".registrations").show();
       }else {
         $("#welcome-text").text("Hi, " + user.name);
       }

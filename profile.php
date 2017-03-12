@@ -1,5 +1,9 @@
 <?php
 require 'functions.php';
+require 'connect.php';
+session_start();
+if (isset($_SESSION['userid'])){
+  $email = $_SESSION['email'];
 ?>
 <html>
 <head>
@@ -12,9 +16,9 @@ require 'functions.php';
   <link href="css/style.css" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css" rel="stylesheet" />
 
-
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js" ></script>
+
 </head>
 
 <body>
@@ -30,10 +34,6 @@ require 'functions.php';
     <div class="ui item basic segment">
       <h5 class="ui header login-data ">
       </h5>
-    </div>
-    <a class="ui item registrations" href="profile.php">
-      <div class="left aligned ui basic segment">
-      My Registrations
     </div>
     <a class="item" href="workshops.php">
       <div class="left aligned ui basic segment">
@@ -140,46 +140,94 @@ require 'functions.php';
 
     </div>
 
-    <div class="ui center aligned container main-contents">
-      <div class="ui four doubling link cards container">
-
+    <div style="margin-top:150px;">
+      <h2 class="ui center aligned header">Your Registrations</h2>
+      <div class="ui basic segment">
+        <h3 class="ui left aliged header">Workshops</h3>
         <?php
-        foreach ($workshops as $key=>$workshop) {
-          ?>
-          <a class="ui card" href="workshop.php?workshop=<?php echo $key ?>">
-            <div class="image">
-              <img src="images/<?php echo $key ?>.png">
-            </div>
-            <div class="content">
-              <div class="header"><?php echo $workshop[0] ?></div>
-              <div class="meta">
-                <span class="category">₹<?php echo $workshop[2] ?></span>
-              </div>
-              <div class="description">
-                <p>
-                  <?php
-                  if ($workshop[1] > 1){
-                    echo "Team of ". $workshop[1];
-                  }else{
-                    echo "Individual Participant";
-                  }
-                  ?>
-                </p>
-              </div>
-            </div>
-            <div class="extra content">
-              <div class="right floated ">Conducted By: <?php echo $workshop[4] ?> </div>
-            </div>
-            <div class="ui bottom attached positive button">
-              <i class="add icon"></i>
-              Register
-            </div>
-          </a>
-          <?php
-        }
-
+        $sql = "SELECT `workshop`, `member1name`, `member1email`,  `member2name`, `member3name`, `member4name` , `member5name`, `member2email`, `member3email`, `member4email`, `member5email` FROM `workshop-registration` WHERE `member1email`='$email'";
+        $row = array("Workshop", "Member 1 Name", "Member 1 Email", "Member 2 Name", "Member 3 Name", "Member 4 Name" , "Member 5 Name", "Member 2 Email", "Member 3 Email", "Member 4 Email", "Member 5 Email");
+        $result = executeQuery($db, $sql);
         ?>
+        <h4 class="ui header">No of workshops registered for: <?php echo $result->num_rows;?> </h4>
 
+        <table class="ui unstackable fixed single line celled striped table">
+          <thead>
+            <tr>
+              <?php
+              foreach ($row as $key => $value) {
+                ?>
+                <th><?php echo $value; ?></th>
+                <?php
+              }
+              ?>
+            </tr>
+          </thead>
+          <tbody>
+            <?php
+            while ($row = $result->fetch_assoc()){
+              echo "<tr>";
+              foreach ($row as $key => $value) {
+                ?>
+                <td><?php echo $value; ?></td>
+                <?php
+              }
+              echo "</tr>";
+            }
+            ?>
+          </tbody>
+        </table>
+
+      </div>
+      <div class="ui basic segment">
+        <h3 class="ui left aliged header">Events</h3>
+        <?php
+        $sql = "SELECT `event`, `member1name`, `member1email`,  `member2name`, `member3name`, `member4name` , `member5name`, `member2email`, `member3email`, `member4email`, `member5email` FROM `event-registration` WHERE `member1email`='$email'";
+        $row = array("Event","Member 1 Name", "Member 1 Email", "Member 2 Name", "Member 3 Name", "Member 4 Name" , "Member 5 Name", "Member 2 Email", "Member 3 Email", "Member 4 Email", "Member 5 Email");
+        $result = executeQuery($db, $sql);
+        ?>
+        <h4 class="ui header">No of events registered for: <?php echo $result->num_rows;?> </h4>
+
+        <table class="ui unstackable fixed single line celled striped table">
+          <thead>
+            <tr>
+              <?php
+              foreach ($row as $key => $value) {
+                ?>
+                <th><?php echo $value; ?></th>
+                <?php
+              }
+              ?>
+            </tr>
+          </thead>
+          <tbody>
+            <?php
+            while ($row = $result->fetch_assoc()){
+              echo "<tr>";
+              foreach ($row as $key => $value) {
+                ?>
+                <td><?php echo $value; ?></td>
+                <?php
+              }
+              echo "</tr>";
+            }
+            ?>
+          </tbody>
+        </table>
+      </div>
+      <div class="ui basic segment">
+        <h3 class="ui header">Accomodation</h3>
+        <h4 class="ui header">
+          <?php
+          $sql = "SELECT * FROM `accomodation` WHERE `email`='$email'";
+          $result = executeQuery($db, $sql);
+          if ($result->num_rows==0){
+            echo "You have not registered for accomodation";
+          }else{
+            echo "You have registered for accomodation";
+          }
+          ?>
+        </h4>
       </div>
     </div>
     <div class="ui black inverted vertical footer segment" id="footer">
@@ -195,8 +243,9 @@ require 'functions.php';
       </div>
       <div class="ui center aligned container">
         Made with <i class=" red heart icon"></i> by Synergy Web Team
-      </div></div>
+      </div>
     </div>
+
   </div>
 
   <div class="ui small modal" id="login-modal">
@@ -247,3 +296,7 @@ require 'functions.php';
 </body>
 
 </html>
+<?php
+}else{
+  header('Location: index.php');
+} ?>

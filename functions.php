@@ -29,4 +29,5 @@ $events = array('waterrocketry' => array("Water Rocketry", 3),
 'cadmodelling' => array("CAD Modelling", 2),
 'mcquiz' => array("McQuiz",2)
 );
+
 ?>

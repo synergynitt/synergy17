@@ -12,27 +12,10 @@ if (array_key_exists($event, $events)){
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link href="css/style.css" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/button.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/modal.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/header.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/dimmer.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/transition.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/form.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/menu.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/sticky.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/container.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/sidebar.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/list.min.css" rel="stylesheet" />
 
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/modal.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/dimmer.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/transition.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/form.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/sidebar.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/sticky.min.js" ></script>
   </head>
 
   <body>
@@ -48,6 +31,10 @@ if (array_key_exists($event, $events)){
       <div class="ui item basic segment">
         <h5 class="ui header login-data ">
         </h5>
+      </div>
+      <a class="ui item registrations" href="profile.php">
+        <div class="left aligned ui basic segment">
+        My Registrations
       </div>
       <a class="item" href="workshops.php">
         <div class="left aligned ui basic segment">
