@@ -144,7 +144,7 @@ if (isset($_SESSION['userid'])){
 
     </div>
 
-    <div style="margin-top:150px;">
+    <div class="main-contents"  style="margin-top:150px;">
       <h2 class="ui center aligned header">Your Registrations</h2>
       <div class="ui basic segment">
         <h3 class="ui left aliged header">Workshops</h3>
