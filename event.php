@@ -413,14 +413,6 @@ if (array_key_exists($event, $events)){
             <li>No points will be awarded if the water rocket lands outside the arena.</li>
             <li>The front tip of the water rocket will be considered as the point where the rocket has fallen on the ground. For this round, the position of the rocket once it comes to rest in considered and not the point of first contact with the ground.</li>
           </ol>
-          <h3 class="ui list">Rules</h3>
-          <ol class="ui list">
-            <li>Total Points for the Competition is equal to the sum of Round 1 points and Round 2 points</li>
-            <li>In event of any clash of final points a tiebreaker will be held between the concerned teams.</li>
-            <li>The clashing teams will have to go through the second round until the points differ.</li>
-            <li>The top three teams will be granted certificates and prize money. Criteria: points scored in Round 1 and Round 2.</li>
-            <li>The decision taken by the judges is final and binding.</li>
-          </ol>
           <h3 class="ui header">Model Specifications</h3>
           <ol class="ui list">
             <li>Water Rocket and all of its components should be handmade. Readymade models are strictly not allowed. </li>
@@ -444,7 +436,13 @@ if (array_key_exists($event, $events)){
             <li>Air pump will be provided on the spot for pressurizing the water rocket.</li>
             <li>The team will be disqualified in case the bottle bursts while pressurizing and is still mounted on the launcher.</li>
             <li>Participants are allowed to use separate models for round one and two but the same model has to be used throughout a given round.</li>
-            <li>Teams should bring their own launch pad which consists of pressure gauge!</li>
+            <li>Teams should bring their own launch pad which consists of pressure gauge.</li>
+            <li>Total Points for the Competition is equal to the sum of Round 1 points and Round 2 points.</li>
+            <li>In event of any clash of final points a tiebreaker will be held between the concerned teams.</li>
+            <li>The clashing teams will have to go through the second round until the points differ.</li>
+            <li>The top three teams will be granted certificates and prize money. Criteria: points scored in Round 1 and Round 2.</li>
+            <li>Participants are supposed to get their own launching pads which cannot be shared with other teams.</li>
+            <li>The decision taken by the judges is final and binding.</li>
           </ol>
           <?php
         }elseif ($event ==="sanrachana") {
