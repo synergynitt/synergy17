@@ -335,7 +335,12 @@
           <li>A caution deposit of Rs. 300 will be collected for accommodation, of which Rs.100 will be refunded after the fest.</li>
           <li>A hospitality kit will be provided to every student registering for accommodation</li>
           <li>In the case of any damage to the services provided, the caution deposit will not be refunded</li>
+          <li>Accommodation is strictly on shared basis. NO individual rooms will be given and any complaints regarding this shall not be entertained.</li>
         </ol>
+        <p> Rules and Regulations:
+          <a href = "rulesandregulations.docx"><i class="blue file word outline icon"></i></a>
+          <a href = "rulesandregulations.pdf"><i class="red file pdf outline icon"></i></a>
+        </p>
         <p> For any clarificaitons contact:</p>
         <div class="ui list">
           <p>Pratheek Denny:
