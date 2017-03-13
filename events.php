@@ -100,7 +100,7 @@ require 'functions.php';
               Login
             </button>
           </a>
-          <a class="ui item" id="logout">
+          <a class="ui item logout">
             <button class="ui basic button" >
               <i class="icon user"></i>
               Logout
