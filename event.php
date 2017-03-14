@@ -436,7 +436,6 @@ if (array_key_exists($event, $events)){
             <li>Air pump will be provided on the spot for pressurizing the water rocket.</li>
             <li>The team will be disqualified in case the bottle bursts while pressurizing and is still mounted on the launcher.</li>
             <li>Participants are allowed to use separate models for round one and two but the same model has to be used throughout a given round.</li>
-            <li>Teams should bring their own launch pad which consists of pressure gauge.</li>
             <li>Total Points for the Competition is equal to the sum of Round 1 points and Round 2 points.</li>
             <li>In event of any clash of final points a tiebreaker will be held between the concerned teams.</li>
             <li>The clashing teams will have to go through the second round until the points differ.</li>
