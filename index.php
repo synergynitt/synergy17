@@ -326,13 +326,13 @@
     </div>
     <div class="content">
       <div class="ui warning message">
-        <p>Registration Fees – Rs.200</p>
+        <p>Synergy Registration Fees – Rs.200. (Rs: 80/- will be given as food coupons)</p>
         <p>The fees will be collected at the PR Desk</p>
         <p>For Accomodation </p>
         <ol class="ui list">
           <li>Beds will be allotted to students based on availability.</li>
-          <li>The cost per day is Rs. 200 which will be collected at the PR Desk in the mechanical engineering department.</li>
-          <li>A caution deposit of Rs. 300 will be collected for accommodation, of which Rs.100 will be refunded after the fest.</li>
+          <li>The cost per day is Rs. 100 which will be collected at the PR Desk in the mechanical engineering department.</li>
+          <li>A caution deposit of Rs. 200 will be collected for accommodation, of which Rs.100 will be refunded after the fest.</li>
           <li>A hospitality kit will be provided to every student registering for accommodation</li>
           <li>In the case of any damage to the services provided, the caution deposit will not be refunded</li>
           <li>Accommodation is strictly on shared basis. NO individual rooms will be given and any complaints regarding this shall not be entertained.</li>
