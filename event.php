@@ -377,7 +377,7 @@ if (array_key_exists($event, $events)){
             <li>Papers with improper formatting will be sent back to the participants and they are encouraged to submit it again after re-formatting.</li>
             <li>Kindly keep the font color of your paper as black (excluding figures, charts, tables).</li>
             <li>Kindly provide your names, email addresses and contact numbers in the paper that you submit.</li>
-            <li>Last date for submission of paper is 16 th March, 2017. The shortlisted participants will be informed. Those participants will be allowed to present their paper during Synergy. The papers must be submitted to paperpresentation.synergy17@gmail.com</li>
+            <li>Last date for submission of paper is 16 th March, 2017. The shortlisted participants will be informed by 16th midnight. Those participants will be allowed to present their paper during Synergy. The papers must be submitted to paperpresentation.synergy17@gmail.com</li>
           </ol>
           <h3 class="ui header">Presentation Details</h3>
           <ol class="ui list">
