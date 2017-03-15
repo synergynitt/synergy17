@@ -11,26 +11,11 @@ if (array_key_exists($workshop, $workshops)){
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link href="css/style.css" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/button.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/modal.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/header.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/dimmer.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/transition.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/form.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/menu.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/sticky.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/sidebar.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/container.min.css" rel="stylesheet" />
 
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/modal.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/dimmer.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/transition.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/form.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/sidebar.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/sticky.min.js" ></script>
+
   </head>
 
   <body>
@@ -435,7 +420,7 @@ if (array_key_exists($workshop, $workshops)){
 
             <?php
           } ?>
-
+          <p>Workshop will be conducted from 9:30AM to 4:30PM. </p>
           <div class="ui center aligned header">
             <button class="ui primary button" id="workshop-register">Register</button>
           </div>
