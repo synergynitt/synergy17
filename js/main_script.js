@@ -12,6 +12,8 @@ function logout(){
     url: 'logout.php',
     success: function(){
       $(".logout").hide();
+      $("#login-modal .ok").removeClass("loading");
+
       $(".login-data").hide();
       $(".registrations").hide();
       $(".synergy-login").show();
@@ -61,6 +63,7 @@ function synergyLogin(){
   .modal({
     blurring: false,
     onApprove : function(){
+      $("#login-modal .ok").addClass("loading");
       console.log("Login Submit Clicked");
       $('#login-form').form('validate form');
       return false;
@@ -70,6 +73,7 @@ function synergyLogin(){
 }
 
 $(".synergy-login").on("click",function(){
+
   synergyLogin();
 });
 
@@ -122,6 +126,8 @@ $('#login-form')
           $('#loginSuccessLabel').hide();
           $('#loginFailedLabel').show();
           $("#loginFailedLabel p").text(data.description);
+          $("#login-modal .ok").removeClass("loading");
+          
 
         }
       }
@@ -130,15 +136,15 @@ $('#login-form')
   },
   onFailure:function(){
     $('#loginFailedLabel').show();
+    $("#login-modal .ok").removeClass("loading");
+
     $("#loginFailedLabel p").text("Enter valid Email and password");
   }
 });
 $("#login-register").on("click", function(){
   $("#login-modal").modal("hide");
   $("#register-modal").modal("show");
-
 });
 $(".view-ui").on("click",function(){
-
   $('.ui.sidebar').sidebar('toggle')  ;
 });
