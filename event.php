@@ -525,7 +525,7 @@ if (array_key_exists($event, $events)){
         }elseif ($event==="mcquiz") {
           ?>
           <h2 class="ui center aligned header">McQuiz</h2>
-          <p>McQuiz is an online event. Details will be updated soon.</p>
+          <p>McQuiz is an offline event. It will be conducted during synergy.</p>
           <?php
         }
         ?>
