@@ -44,6 +44,19 @@ if ($download==='workshops'){
   while ($row = $result->fetch_assoc()){
         fputcsv($file, $row);
     }
+}else if ($download==='registrations'){
+  header('Content-type: text/csv');
+  header('Content-Disposition: attachment; filename="registrations.csv"');
+  header('Pragma: no-cache');
+  header('Expires: 0');
+  $file = fopen('php://output', 'w');
+  $sql = "SELECT  `users`.`userid`, `users`.`name`, `users`.`email`, `users`.`college`, `users`.`city`, `users`.`department`, `users`.`year` FROM `users`  ORDER BY  `userid`";
+  $row = array("userid", "name", "email", "college", "city", "department", "year" );
+  fputcsv($file, $row);
+  $result = executeQuery($db, $sql);
+  while ($row = $result->fetch_assoc()){
+        fputcsv($file, $row);
+    }
 }else{
   ?>
 
@@ -63,6 +76,7 @@ if ($download==='workshops'){
   </head>
   <body>
     <div class="ui large green inverted fixed menu sticky-menu">
+        <a class="ui item" href="#registrations">Registrations</a>
         <div class="ui  workshops dropdown item">
           Workshops <i class="dropdown icon"></i>
           <div class="menu">
@@ -90,6 +104,56 @@ if ($download==='workshops'){
       </div>
 
     <div class="main-contents">
+      <h1 class="ui center aligned black header">
+        <div class="content">Registrations</div>
+        <a href = "4cbe59a0e5f685fd48160888c568beab.php?download=registrations"> <i class="green download icon"></i>
+        </a>
+      </h1>
+      <a name="registrations">
+        <div class="ui basic segment">
+      <?php
+      $sql = "SELECT *  FROM  `users`";
+      $result = executeQuery($db, $sql);
+      ?>
+
+
+      <h3 class="ui header">Total Registrations: <?php echo $result->num_rows; ?></h3>
+      <table class="ui unstackable fixed single line celled striped table">
+        <thead>
+          <tr>
+            <th>Synergy ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>College</th>
+            <th>Department</th>
+            <th>Year</th>
+            <th>City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php
+          while($row = $result->fetch_assoc()){
+            ?>
+            <tr>
+              <td><?php echo $row['userid'];?></td>
+              <td><?php echo $row['name'];?></td>
+              <td><?php echo $row['email'];?></td>
+              <td><?php echo $row['phone'];?></td>
+              <td><?php echo $row['college'];?></td>
+              <td><?php echo $row['department'];?></td>
+              <td><?php echo $row['year'];?></td>
+              <td><?php echo $row['city'];?></td>
+            </tr>
+            <?php
+          }
+          ?>
+        </tbody>
+      </table>
+    </div>
+  </a>
+  <div class="ui divider">
+  </div>
       <h1 class="ui center aligned header">
         Workshops
         <a href = "4cbe59a0e5f685fd48160888c568beab.php?download=workshops"> <i class="green download icon"></i></a>
