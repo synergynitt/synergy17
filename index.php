@@ -153,6 +153,9 @@
           <a class="header" href="workshops.php">Workshops</a>
         </div>
         <div class="item">
+          <a class="header" href="sponsors.php">Sponsors</a>
+        </div>
+        <div class="item">
           <a class="header" href="team.php">Team</a>
         </div>
         <div class="item">
