@@ -68,7 +68,7 @@ require 'functions.php';
       <div class="left aligned ui basic segment">
         <i class="green calendar icon"></i>
 
-        Schedule (coming soon)
+        Schedule
       </div>
     </a>
   </div>

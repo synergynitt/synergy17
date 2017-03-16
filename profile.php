@@ -71,11 +71,11 @@ if (isset($_SESSION['userid'])){
     </div>
     </a>
 
-    <a class="item" >
+    <a class="item" href="schedule.xlsx" >
       <div class="left aligned ui basic segment">
       <i class="green calendar icon"></i>
 
-      Schedule (coming soon)
+      Schedule
     </div>
     </a>
   </div>
