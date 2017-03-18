@@ -329,7 +329,7 @@
     </div>
     <div class="content">
       <div class="ui warning message">
-        <p>Synergy Registration Fees – Rs.200. (Rs: 80/- will be given as food coupons)</p>
+        <p>Synergy Registration Fees – Rs.200.</p>
         <p>The fees will be collected at the PR Desk</p>
         <p>For Accomodation </p>
         <ol class="ui list">
