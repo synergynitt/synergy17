@@ -154,10 +154,15 @@ require 'functions.php';
         <a href="http://testfunda.com/"><img src="images/omp/testfunda.png"></a>
         <a href="http://www.twenty19.com/"><img src="images/omp/twenty19.png"></a>
       </div>
+      <h1 class="ui header">Online Ticketing Partners</h1>
+      <div class="ui small images sponsors">
+        <a href="https://www.thecollegefever.com/"><img src="images/omp/collegefever.png"></a>
+      </div>
+
 
     </div>
 
-    <div class="ui black inverted vertical footer segment" id="footer"  style="position:fixed;bottom:0;width:100%">
+    <div class="ui black inverted vertical footer segment" id="footer" >
       <div class="ui inverted  divider"></div>
       <div class="ui center aligned container">
         Contact us on:
