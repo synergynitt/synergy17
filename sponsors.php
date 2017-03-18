@@ -141,17 +141,18 @@ require 'functions.php';
     <div class="ui basic center aligned container main-contents" style="margin-bottom:50px;">
       <div class="ui black divider"></div>
       <h1 class="ui header">Online Media Partners</h1>
-      <div class="ui small bordered images">
-        <?php
-        $dir = "images/omp";
-        $omps = array_diff(scandir($dir), array('..', '.'));
-        foreach ($omps as $key => $omp) {
-          ?>
-          <img src="images/omp/<?php echo $omp;?>">
-          <?php
-        }
-         ?>
-
+      <div class="ui small images sponsors">
+        <a href="https://allevents.in/"><img src="images/omp/ae.png"></a>
+        <a href="http://www.faadooengineers.com/"><img src="images/omp/fadoo.png"></a>
+        <a href="http://www.fuccha.in/"><img src="images/omp/fucchao.png"></a>
+        <a href="http://www.knowafest.com/"><img src="images/omp/knowafest.png"></a>
+        <a href="http://www.meraevents.com/"><img src="images/omp/meraevents.png"></a>
+        <a href="http://www.myklassroom.com/"><img src="images/omp/myklassroom.png"></a>
+        <a href="http://www.nammatrichy.com/"><img src="images/omp/nammatrichy.jpg"></a>
+        <a href="http://pricebaba.com/"><img src="images/omp/pricebaba.png"></a>
+        <a href="http://ohcampus.com/"><img src="images/omp/ohcampus.png"></a>
+        <a href="http://testfunda.com/"><img src="images/omp/testfunda.png"></a>
+        <a href="http://www.twenty19.com/"><img src="images/omp/twenty19.png"></a>
       </div>
 
     </div>
